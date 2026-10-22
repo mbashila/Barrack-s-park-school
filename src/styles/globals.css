@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Caveat:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #18375d;
+  background-color: #ffffff;
+}
+
+@layer components {
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-widest;
+    color: #ff1735;
+  }
+
+  .section-heading {
+    @apply text-4xl font-bold mb-2;
+    color: #06234b;
+  }
+
+  .section-heading-red-underline {
+    @apply w-12 h-1 my-4;
+    background-color: #ff1735;
+  }
+
+  .btn-primary {
+    @apply text-white px-6 py-3 rounded-full font-bold transition-colors inline-flex items-center gap-2;
+    background-color: #ff1735;
+  }
+
+  .btn-primary:hover {
+    background-color: #e60e27;
+  }
+
+  .btn-secondary {
+    @apply border-2 text-white px-6 py-3 rounded-full font-bold transition-colors inline-flex items-center gap-2;
+    border-color: white;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-white;
+    color: #06234b;
+  }
+
+  .handwritten-text {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+  }
+
+  .program-card {
+    @apply bg-white rounded-2xl shadow-md border overflow-hidden hover:shadow-lg transition-shadow;
+    border-color: #e5e7eb;
+  }
+
+  .program-icon-badge {
+    @apply absolute top-32 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full flex items-center justify-center shadow-lg;
+  }
+}
