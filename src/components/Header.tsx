@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -20,12 +21,18 @@ export default function Header() {
 
   return (
     <header className="bg-navy-primary sticky top-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-            <div className="bg-light-blue rounded-lg w-16 h-16 flex items-center justify-center">
-              <span className="text-navy-primary text-lg font-bold">🎓</span>
+            <div className="w-14 h-14 flex items-center justify-center">
+              <Image
+                src="/images/school-crest.png"
+                alt="Barracka's Park School Crest"
+                width={56}
+                height={56}
+                className="object-contain"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-white font-bold text-sm">

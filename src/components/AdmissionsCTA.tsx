@@ -14,7 +14,7 @@ export default function AdmissionsCTA() {
         <div className="absolute bottom-10 right-1/3 text-2xl">⭐</div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
           {/* Left Side - Heading */}
           <div>

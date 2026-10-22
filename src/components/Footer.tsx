@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, MapPin } from "lucide-react";
 
 const footerNav = [
@@ -18,12 +19,18 @@ export default function Footer() {
   return (
     <footer className="bg-navy-primary text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Left - Branding */}
           <div className="flex flex-col items-center md:items-start">
-            <div className="bg-light-blue rounded-lg w-16 h-16 flex items-center justify-center mb-4">
-              <span className="text-navy-primary text-lg font-bold">🎓</span>
+            <div className="w-14 h-14 flex items-center justify-center mb-4">
+              <Image
+                src="/images/school-crest.png"
+                alt="Barracka's Park School Crest"
+                width={56}
+                height={56}
+                className="object-contain"
+              />
             </div>
             <h2 className="text-white font-bold text-sm text-center md:text-left">
               BARRACKA'S PARK SCHOOL

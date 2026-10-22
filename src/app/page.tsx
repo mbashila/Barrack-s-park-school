@@ -10,7 +10,7 @@ export default function Home() {
         title="A Safe Place to"
         titleRed="Learn, Grow & Succeed"
         subtitle="We provide a nurturing and supportive environment where every child is encouraged to reach their full potential — academically, socially and emotionally."
-        backgroundImage="/images/hero-bg.jpg"
+        backgroundImage="/images/HeroSection.png"
         ctaButtons={{
           primary: {
             text: "Explore Our Programs",

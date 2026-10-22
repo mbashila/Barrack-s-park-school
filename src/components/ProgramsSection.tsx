@@ -42,7 +42,7 @@ const programs = [
 export default function ProgramsSection() {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Introduction */}
           <div>
@@ -60,9 +60,9 @@ export default function ProgramsSection() {
           </div>
 
           {/* Right Program Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6">
+          <div className="flex flex-nowrap gap-4 lg:gap-6 overflow-x-auto">
             {programs.map((program) => (
-              <div key={program.name} className="flex justify-center">
+              <div key={program.name} className="flex-shrink-0 w-[180px] lg:w-[220px]">
                 <ProgramCard
                   title={program.name}
                   description={program.description}

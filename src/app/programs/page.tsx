@@ -67,7 +67,7 @@ export default function Programs() {
       />
 
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="space-y-12">
             {programDetails.map((program, index) => (
               <div

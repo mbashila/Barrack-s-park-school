@@ -41,7 +41,7 @@ export default function Admissions() {
       <Hero title="Admissions" subtitle="Join our growing school community" />
 
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
           {/* Admission Process */}
           <div className="mb-20">
             <h2 className="section-title text-center mb-16">

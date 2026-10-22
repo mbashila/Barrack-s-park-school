@@ -27,7 +27,7 @@ export default function Hero({
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto px-4 text-center">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">{title}</h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-100">{subtitle}</p>
         {ctaButton && (

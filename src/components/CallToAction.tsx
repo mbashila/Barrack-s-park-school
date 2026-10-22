@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export default function CallToAction() {
   return (
     <section className="py-20 bg-school-blue text-white">
-      <div className="container mx-auto px-4 text-center">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Ready to Enroll Your Child?
         </h2>

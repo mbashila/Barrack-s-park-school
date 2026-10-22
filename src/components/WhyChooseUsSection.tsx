@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Users, Star, Shield, Heart, BookOpen, Handshake } from "lucide-react";
 
 const benefits = [
@@ -12,16 +13,18 @@ const benefits = [
 export default function WhyChooseUsSection() {
   return (
     <section className="bg-light-blue py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
         {/* Desktop 3-column layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
           {/* Left Column - School Building Image */}
-          <div className="relative">
-            <div className="bg-gradient-to-br from-navy-secondary to-navy-primary rounded-2xl overflow-hidden h-64 md:h-72 flex items-center justify-center text-white">
-              <div className="text-center">
-                <div className="text-4xl mb-2">🏫</div>
-                <p className="font-bold text-sm">School Building</p>
-              </div>
+          <div className="relative mt-8">
+            <div className="bg-gradient-to-br from-navy-secondary to-navy-primary rounded-2xl overflow-hidden h-64 md:h-72">
+              <Image
+                src="/images/SchoolBuilding.jpg"
+                alt="School Building"
+                fill
+                className="object-cover rounded-2xl"
+              />
             </div>
 
             {/* Brush stroke banner */}

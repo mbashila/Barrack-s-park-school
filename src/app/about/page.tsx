@@ -10,7 +10,7 @@ export default function About() {
       />
 
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h2 className="section-title">Our Story</h2>

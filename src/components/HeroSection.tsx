@@ -27,29 +27,29 @@ export default function Hero({
       className="relative min-h-[400px] md:min-h-[450px] flex items-center justify-start overflow-hidden"
       style={{
         backgroundImage: backgroundImage
-          ? `linear-gradient(90deg, rgba(6,35,75,0.8) 0%, rgba(6,35,75,0.3) 50%, transparent 100%), url(${backgroundImage})`
-          : "linear-gradient(90deg, rgba(6,35,75,0.8) 0%, rgba(6,35,75,0.3) 50%, #EEF6FD 100%)",
+          ? `linear-gradient(90deg, rgba(6,35,75,0.95) 0%, rgba(6,35,75,0.6) 50%, rgba(6,35,75,0.2) 100%), url(${backgroundImage})`
+          : "linear-gradient(90deg, rgba(6,35,75,0.95) 0%, rgba(6,35,75,0.6) 50%, #EEF6FD 100%)",
         backgroundSize: "cover",
         backgroundPosition: "center right",
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 w-full">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-16 md:py-24 w-full">
         <div className="max-w-xl">
           {/* Welcome Label */}
           <p className="section-label">Welcome to Barracka's Park School</p>
 
           {/* Main Heading */}
           <div className="my-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 whitespace-nowrap">
               {title}
             </h1>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent-red">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent-red whitespace-nowrap">
               {titleRed}
             </h1>
           </div>
 
           {/* Subtitle */}
-          <p className="text-lg text-gray-100 mb-8 leading-relaxed max-w-md">
+          <p className="text-lg text-gray-100 mb-8 leading-relaxed max-w-md break-words">
             {subtitle}
           </p>
 

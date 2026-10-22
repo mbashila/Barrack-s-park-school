@@ -34,7 +34,7 @@ export default function Contact() {
       <Hero title="Contact Us" subtitle="Get in touch with us today" />
 
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center p-8 bg-gray-50 rounded-lg">
               <div className="flex justify-center mb-4">
